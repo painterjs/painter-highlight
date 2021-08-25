@@ -1,0 +1,57 @@
+{
+  "name": "painter-highlight",
+  "version": "0.2.6",
+  "description": "A simple tool for generating highlighted code images.（一个简单的高亮代码图片生成工具）",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "rollup -c -w rollup.config.ts",
+    "build": "rollup -c rollup.config.publish.ts",
+    "lint": "eslint --fix --ext .ts src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huang-LM/painter-highlight.git"
+  },
+  "keywords": [
+    "painter",
+    "canvas",
+    "highlight"
+  ],
+  "author": "zhongmu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Huang-LM/painter-highlight/issues"
+  },
+  "homepage": "https://github.com/Huang-LM/painter-highlight#readme",
+  "browser": "dist/index.ts",
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@rollup/plugin-node-resolve": "^13.0.2",
+    "@types/ms": "^0.7.31",
+    "@typescript-eslint/parser": "^4.28.3",
+    "esbuild": "^0.12.15",
+    "eslint": "^7.31.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "rollup": "^2.53.2",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-esbuild": "^4.5.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "highlight.js": "^11.1.0",
+    "painter-kernel": "^1.0.5"
+  }
+}
